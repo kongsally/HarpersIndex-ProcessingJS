@@ -184,17 +184,18 @@ class Stuff {
     float y = screenY(posx, posy, (cos(posz) + 1.0) * 50);
     pushMatrix();
     translate(posx, posy + 35, 90);
-    lights();
     noStroke();
     textSize(15);
     noStroke();
     color pane = color(0, 0, 0, 200);
     fill(pane);
     rect(-textWidth(number)/2 - 20, -5, width/3 + 10, 100);
+    
     popMatrix();
     pushMatrix();
     translate(posx, posy + 35, 100);
     noStroke();
+    lights();
     textSize(15);
     noStroke();
     fill(255);
@@ -202,5 +203,4 @@ class Stuff {
     popMatrix();
   }
 }
-
 
